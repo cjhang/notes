@@ -10,8 +10,8 @@
 
 
 # Reading tips
-To make the long note more orgnized and render the math formular propertly, two plugins for Chrome based brower can be helpful:
+To make the long note more orgnized and math formulars rendered propertly, two plugins for Chrome based browers can be helpful:
 - [MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima)
 - [Github Toc](https://chrome.google.com/webstore/detail/github-toc/nalkpgbfaadkpckoadhlkihofnbhfhek?hl=en)
 
-For the desktop user, [Typora](https://typora.io/) can be the ideal markdown reader to render all the notes(including math formular, toc and diagrams)
+For desktop users, [Typora](https://typora.io/) can be the ideal markdown reader which supports math formulars, table of content and [Mermaid diagrams](https://mermaid-js.github.io)
