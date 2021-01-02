@@ -6,3 +6,4 @@
 
 [Quick Notes](./QuickNotes): Quick references of command line software, programming and operating systems.
 
+[Astrop-ph](./Astro-ph/README.md): Notes and thoughts from daily astro-ph reading. Keep reading!
