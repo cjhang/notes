@@ -1,0 +1,1 @@
+Stream velocity: The relative velocity between the dark matter and the baryons due to the decoupling of baryonic matter and radiation

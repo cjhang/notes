@@ -1,0 +1,1 @@
+Dynamical range is a approximate of the fidelity of the finnal decolved image. Defined as the ratio between the highest peak of the image divided by the rms in the void.
