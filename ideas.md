@@ -36,9 +36,9 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 
    > From current high resolution [C II] observations, it seems that most galaxies with strong [C II] are rotation dominated. Since most of these galaxies only barely resolved, so it definitely need the kinematics from other gas tracer. **Maybe one proposal for next ALMA cycle**
 
-6. Measuring the magnetic filed in the submillimeter bright galaxies and the Lyman-a galaxies in very high-z galaxies, additional evidence of the high turbulence?
+6. ~~Measuring the magnetic filed in the submillimeter bright galaxies and the Lyman-a galaxies in very high-z galaxies, additional evidence of the high turbulence?~~
 
-   > - [ ] 
+   > The kinetic SZ effect and the synchrotron are both hard to measure at early Univere, but it definitely important for future surveys
 
 7. Try to observe the magnetic at high-z galaxies.
 
@@ -60,6 +60,10 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
    > It relies on the model subtraction to reomove the strong regular rotation, so that it where the uncertainty comes from.
 
 2. DESI has much better coverage for close pair sample than SDSS, can be a much better sample to study galaxy merger. The advantages of DESI also in the deeper image, which can even be used for statistically study the minor merger.
+
+3. Magnetic field in local interacting galaxies
+
+   > It is a idea come from the study of magnetized filaments in Galactic center, [Coughlin et al.](https://arxiv.org/abs/2010.13790) have proposed that the tidal disruption may also play a role for the formation of the magnetic field. So it would be interesting to search the magnetic field in the tidal disrupted galaxies.
 
 ## Rotational curve
 
