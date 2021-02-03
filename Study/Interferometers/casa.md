@@ -46,6 +46,8 @@ change the way logger working:
 ```shell
 casa --nologger --log2term # no GUI but message sent to terminal
 casa --logfile mylogfile   # specify a logfile
+
+casa --nologger --logfile logs/$(date +%d.%m.%y).log #put all the logs into a separate folder
 ```
 
 
@@ -57,7 +59,7 @@ The units of the flux density is Jy/Beam, and the Beam Area = $π(\frac{\rm FWHM
 ## VLA Notes
 
 1. Zero visibility values and shadowed data were flagged/removed (note that this already may be done by the [NRAO Data Archive](https://archive.nrao.edu/archive/advquery.jsp))
-2. Reference antenna usually select the one in the center, but not too central to suffer from the shadowing.
+2. Reference antenna usually choose the one in the center, but not too central to suffer from the shadowing.
 
 
 
@@ -83,14 +85,10 @@ First, we need to make sure [pip](https://pypi.python.org/pypi/pip) is installed
 CASA <1>: from setuptools.command import easy_install
 
 CASA <2>: easy_install.main(['--user', 'pip'])
-```
 
-Now, quit CASA and re-open it, then type the following to install `spectral-cube`:
+CASA <3>: import pip
 
-```
-CASA <1>: import pip
-
-CASA <2>: pip.main(['install', 'spectral-cube', '--user'])
+CASA <4>: pip.main(['install', 'spectral-cube', '--user'])
 ```
 
 
@@ -181,13 +179,13 @@ from casatools import imager as imtool
 
 # Calibration Notes
 
-**this is the calibration notes when calibrate the VLA HI data**
+**This note comes from the first time I was calibrating VLA HI data.**
 
 
 
 ## Prior
 
-Before carry the calibration, one firstly need to check the [operator's log](http://www.vla.nrao.edu/cgi-bin/oplogs.cgi). It would remind you how many antennas actually works and where there are any antenna position updates.
+Before the calibration, one firstly needs to check the [operator's log](http://www.vla.nrao.edu/cgi-bin/oplogs.cgi). It would remind you the performance of antennas, whether conditions and whether antenna positions need to be updated.
 
 Firstly, check your raw data by printing all the relevant information:
 
@@ -226,9 +224,9 @@ plotms(vis=msfile, xaxis='channel', yaxis='amplitude', avgtime='1e6', coloraxis=
 
 ## Prior Calibration
 
-The prior calibration mainly focus on antenna based calibration and some specialized calibration. 
+The prior calibrations mainly focus on antenna based calibration and some specialized calibration. 
 
-CASA relies on `gencal` to designate tables that can be used in `applycal` , `gaincal`, `bandpass` 
+CASA relies on `gencal` to generate calibration tables that can be used in `applycal` , `gaincal`, `bandpass` 
 
 
 
@@ -240,21 +238,19 @@ For low-frequency interferometer, the prior calibration usually contains:
    gencal(vis='vis', caltable='antpos.cal', caltype='antpos', antenna='')
    ```
 
-   
-
 2. 'gain curve': describe how each antenna behaves as a function of elevation, for each receiver band. 
 
    ```python
    gencal(vis='vis', caltable='gaincurve.cal', caltype='gceff')
    ```
 
-   the parameter `caltype='gceff'` means 
+   the parameter `caltype='gceff'` means gaincurve and antenna efficiency.
 
-3. 'Opacity': atmospheric optical depth corrections, important for high frequency(>15GHz e.g., Ku, K, Ka, & Q band). 
+3. 'Opacity': atmospheric optical depth corrections, important for high frequency (>15GHz e.g., Ku, K, Ka, & Q band). 
 
    ```python
    myTau = plotweather(vis=msfile, doPlot=True) #it will generate the weather plot
-   gencal(vis=msfile, caltable='opacity.cal', caltype='opac', spw='0', parameter=myTau)
+   gencal(vis=msfile, caltable='opacity.cal', caltype='opac', parameter=myTau)
    ```
 
 4. 'Ionosphere': correction for the polarization changes caused by the ionosphere, important for low-frequency (P, S, L-band)
@@ -281,7 +277,7 @@ For low-frequency interferometer, the prior calibration usually contains:
 
 The bandpass calibration is used to correct the amplitude and phase response of different channels. Before running the actual `bandpass`, it is suggested to correct the time variation firstly.
 
-Give an overview about how quickly phase changes with time (To speed up the plot, try to check the baselines related with the reference antenna):
+To give an overview about how quickly phase changes with time (To speed up the plot, try to check the baselines related with the reference antenna):
 
 ```python
 # phase change with time
@@ -367,7 +363,7 @@ plotms(vis='bandpass.bcal', gridrows=3, gridcols=3, xaxis='chan',
 
 ## Gain Calibration
 
-For the gain-calibrator, it is mainly used to correct the long-time phase and amplitude variation of the science targets. So, similar with science target, we need regularly visit the gain calibrator when we are observing our science target. Due to this reason, we need a nearby and a bright enough gain calibrator comparing with our target. 
+For the gain-calibrator, it is mainly used to correct the long-time phase and amplitude variation of the science targets. So, during the observation, we need to observe the gain calibrator occasionaly when we are observing our science target. Due to this, we may need a nearby and a bright gain calibrator to get a better calibration. 
 
 
 
@@ -388,6 +384,8 @@ plotms(vis='phase_int.gcal',gridrows=3,gridcols=3,xaxis='time',yaxis='phase',
 
 
 
+Then, the long time variation can be derived by set the `solint='inf'`.
+
 ```python
 gaincal(vis='vis',caltable='phase_scan.gcal',field='allcal',
         spw='0~1:4~60',solint='inf',refant='refant',minsnr=2.0,calmode='p',
@@ -400,7 +398,7 @@ plotms(vis='phase_scan.gcal',gridrows=3,gridcols=3,xaxis='time',yaxis='phase',
 
 
 
-Apply the phase-only calibration of integrated time on the fly to derive amplitude solutions
+Apply the phase-only calibration of integrated time on the fly to derive amplitude solutions. (Calling gaincal by include the previous calibration table through `gaintable` will apply them first to get the new gaintable)
 
 ```python
 gaincal(vis='vis',caltable='amp.gcal',field='allcal',
@@ -409,7 +407,7 @@ gaincal(vis='vis',caltable='amp.gcal',field='allcal',
                    'bandpass.bcal','phase_int.gcal'])
 ```
 
-This phase variation in `amp.cal` should be will small (the residual after `solint='int'`phase gain calibration)
+This phase variation in `amp.cal` should be small (the residual after `solint='int'`phase gain calibration)
 
 ```python
 # the scatter should be very small in phase
@@ -422,7 +420,7 @@ plotms(vis='amp.gcal',gridrows=3,gridcols=3,xaxis='time',yaxis='amp',
 
 
 
-Fluxscale
+Fluxscale: 
 
 ```python
 fluxscale(vis='vis',caltable='amp.gcal',
@@ -442,6 +440,8 @@ for f in [bcal, gcal, fcal]:
         	gainfield=['', '', '', bcal, bcal, f, f, f],
         	calwt=False)
 ```
+
+
 
 For the science target:
 
@@ -488,7 +488,7 @@ For VLA L band https://science.nrao.edu/facilities/vla/observing/RFI/L-Band
 
 Operates on the 2D time-freq plane for each baseline and correlation. For a given baseline with certain correlation, it will first average visibility through the time to get an averaged spectrum. And then fitting the band-shape by straight line or polynomial. The RFI spikes can be detected by the sigma clip based on the fitted band-shape.
 
-Checking how the `TFCrop` works (It is wise to check baselines separately)
+Checking how the `TFCrop` works (It is faster to check baselines separately)
 
 ```python
 #>> manual testing
@@ -517,7 +517,7 @@ flagdata(vis=msfile, mode='tfcrop', spw='0,1', field='', antenna='',
 
 ### RFlag
 
-Detect outliers based on sliding-window RMS filters. It will go through for each channel(time analysis) and timestep(spectral analysis). `rflag` detects the outlier based on the baseline of the calibrated data and then mapping the flags to the original data. **It works good for low-level noisy RFI** 
+Detect outliers based on sliding-window RMS filters. It will go through for each channel (time analysis) and timestep (spectral analysis). `rflag` detects the outlier based on the baseline of the calibrated data and then mapping the flags to the original data. **It works good for low-level noisy RFI** 
 
 Checking how the `rflag` works
 
@@ -549,7 +549,7 @@ flagdata(vis=msfile, mode='extend', spw='0,1', growtime=50.0, growfreq=90.0,
 
 
 
-After all these flagging, it is import to have a general sense about how many data are flagged:
+After all these flagging, it is import to have a general sense about how many data were flagged:
 
 ```python
 flagInfo = flagdata(vis=msfile, mode='summary', action='calculate', display='none', spwchan=False)
@@ -565,15 +565,6 @@ Set the `spwchan=True` it will give the flagged fraction of every channel but wi
 
 
 
-## Pipeline
-
-```python
-import pipeline.recipes.hifv as hifv
-hifv.hifv(['mySDM'])
-```
-
-
-
 
 
 ## Reference:
@@ -583,8 +574,6 @@ For VLA beginner: [IRC+10216 Tutorial](https://casaguides.nrao.edu/index.php/Kar
 For ALMA beginner: 
 
 RFI Flagging: [Topical Guide: Flagging VLA Data](http://casaguides.nrao.edu/index.php/VLA_CASA_Flagging) (CASA 5.5.0) [Known RFI](https://science.nrao.edu/facilities/vla/docs/manuals/obsguide/modes/rfi)
-
-# 
 
 
 
@@ -608,7 +597,7 @@ There are basically two ways to subtract the continuum to obtain the emission li
 
 
 
-##Emission Line Imaging 
+## Emission Line Imaging 
 
 **continuum subtraction**
 
@@ -648,8 +637,6 @@ It is import to remove the old tclean files before start a new one.
 ```python
 rmtables(tablenames='vis.cube.ms*')
 ```
-
-
 
 
 
@@ -719,14 +706,6 @@ tclean(vis='vis.contsub',spw='0:7~58',imagename='IRC10216_HC3N.cube',
 
 
 
-Image moments:
-
-```text
-2020-03-19 07:13:53	WARN	immoments::Image2DConvolver::_dealWithRestoringBeam	Convolving kernel has minor axis 3.43905 arcsec which is less than the pixel diagonal length of 4.24264 arcsec. Thus, the kernel is poorly sampled, and so the output of this application may not be what you expect. You should consider increasing the kernel size or regridding the image to a smaller pixel size
-```
-
-
-
 ## Auto-Multithresh
 
 Main  Parameter:
@@ -767,7 +746,7 @@ Uniform weighting:
 
 Before applying self-calibration, previous tclean should have `savemodel='modelcolumn'` to set the initial model firstly. This first clean process shouldn't clean too deep, since all the fake noise will locked in the model. **At the end of the tclean, please confirm that the model has been saved in the origin measurement file ("Saving model column" in the log) and the model image only has the true structures.** Or, all the phase of antennas will be shifted to the reference antenna, which will lead to a point source image for the self-calibrated data.
 
-The self-calibration is the same we do for the calibrator. Firstly we try to correct the quick phase variation. **It is also suggested to check the phase variates with channel firstly to avoid strong spike signals (mostly RFI)**.
+The self-calibration is the same we do for the calibrator. Firstly we try to correct the quick phase variation. **It is also suggested to check the phase variation with channel firstly to avoid strong spike signals (mostly RFI)**.
 
 ```python
 gaincal(vis=calfile, caltable='pcal_10min.gcal', spw='0:19~20', calmode='p',
@@ -790,8 +769,6 @@ Apply the calibration. When apply one `spw` data to others, the `spwmap=[[1,1]]`
 applycal(vis=calfile, field='', spw='0,1', interp=['linearPD',''],
          gaintable=['pcal_10min.gcal'], spwmap=[[1,1]], calwt=False)
 ```
-
-
 
 
 
@@ -849,13 +826,6 @@ It is designed to make the sensitivity more uniform for each channel as the weig
 
 
 
-## Questions
-
-1. `tclean`, pbmask, primary mask, how the primary beam mask do? why primary beam .pb file often used for mask
-2. `immoments`, includepix for moment0 and moment1, why different value? the best practice?
-
-
-
 
 
 ## Tips for imaging
@@ -867,6 +837,8 @@ Usually 'bary' is used for sources where z>0.2 ('extragalactic") and 'lsrk is us
 
 
 # Total Power notes
+
+**Needs updates**
 
 ```python
 import analysisUtils as aU
