@@ -10,6 +10,12 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 
 2. Find the proto-group in deep small field observation? Galaxy group is smaller than galaxy cluster, so ALMACAL can be used to search for proto-groups in the early Universe.
 
+   > It is also very difficult to confirm their redshift. Beside, finding way to remove the residuals of in the final image can be critical for the faint objects in the calibrators' field.
+
+3. Line searching, 
+
+   > OH$^+$ CH$^+$ are low density tracers, they are usually observed in obsorption, which can be used to search gas inflow and outflow of the blazers.  [Barte+2020]
+
 ## Early Universe
 
 1. There is initial mass function for stars, how about the initial mass function for galaxies? Will that matters for the proto-cluster formation or can it be the characteristics to distinguish different evolution stage of clusters? Any possible for the initial mass function of black whole seed at the reionization era?
@@ -45,13 +51,28 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
    > The first ideal target could be the strong lensed source, they were bright and could reach a relative high angular resolution.
    >
    > - Red Radio Ring (Geach+2015)
-   >
-   > - [ ] read the review paper of magnetic field measures, and test the possibility to measure the magnetic field in high-z Universe
+   >- [ ] read the review paper of magnetic field measures, and test the possibility to measure the magnetic field in high-z Universe
+
+8. The rotation curve of proto-cluster: resolved central galaxies + general circular motion of the satellite galaxies
+
+   > The best candidate for such a testing is the two hypoluminous proto-clusters find in 2018
+   
+9. The connection bettween lyman-break galactic proto-cluster and the SMG photo-cluster
+
+10. X-ray survey of SMGs
+
+    > 1. One possible project is to make a small survey of Chandra observation for ~10 brightest, but not lensed SMG, to see their X-ray occupation. 
+    >
+    > 2. Based on the VLA observation of several SMGs, we can predict its X-ray luminosity based on their 
 
 ## AGN
 
 1. Find timescale than AGN activity before  star formation, find evidence of AGN enhance star formation. Jet produce ring star formation, alpha/Fe abundance.
 2. Gas replenish in the Elliptical galaxies, the frequency, the importance, the origin. High star formation efficiency in early type galaxies 
+
+## Cosmological evolution of baryons
+
+1. The available molelular gas reservior is somehow consistent with cosmic star formation trend. However, the atomic gas follows the general slihtly flat trend from early Universe to local Universe. One possible issue may be the dection of atomic gas in the early Universe. 
 
 ## Local galaxies
 
@@ -64,6 +85,10 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 3. Magnetic field in local interacting galaxies
 
    > It is a idea come from the study of magnetized filaments in Galactic center, [Coughlin et al.](https://arxiv.org/abs/2010.13790) have proposed that the tidal disruption may also play a role for the formation of the magnetic field. So it would be interesting to search the magnetic field in the tidal disrupted galaxies.
+
+4. Molecular gas and dust properties in super-thin galaxies
+
+   > Super-thin galaxies were though to have very cold stellar disk and rich in atomic gas. They are dominated by dark matter in all scales of the galaxy. 
 
 ## Rotational curve
 
@@ -100,6 +125,10 @@ Study how the rotational curve changed from Cusp to Core:
 
 
 ## Technicals
+
+Differential phase difference:
+
+1. ALMACAL searching for spectral lines in the unreolved blazer center, possibe place to search for gas motion using differential phase?
 
 Power Spectra Distribution:
 

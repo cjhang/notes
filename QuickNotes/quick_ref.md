@@ -10,6 +10,16 @@ cp -R Dir1 Dir2 # copy with auto mergering
 
 
 
+## Download data
+
+```shell
+ wget -e robots=off -r --no-check-certificate --http-user "username" --http-password "password" url
+```
+
+
+
+
+
 ## Docker
 
 ```shell

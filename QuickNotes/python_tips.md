@@ -1,5 +1,7 @@
 # Python Tips
 
+[toc]
+
 python将字符串转化为时间： 
 
 ```python
@@ -92,6 +94,22 @@ python `__slots__` can be used for memory optimize
 multi-processing: Try setting the maxtasksperchild argument on the pool
 
 
+
+### Suppress the unwanted output
+
+```python
+import sys
+import os
+
+old_stdout = sys.stdout # backup current stdout
+sys.stdout = open(os.devnull, "w")
+
+my_nasty_function()
+
+sys.stdout = old_stdout # reset old stdout
+```
+
+[ref](https://stackoverflow.com/questions/8447185/to-prevent-a-function-from-printing-in-the-batch-console-in-python)
 
 
 

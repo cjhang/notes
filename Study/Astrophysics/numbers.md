@@ -147,6 +147,8 @@ CO J=3-2, 345.8 GHz
 
 CO J=7-6, 806.65 GHz
 
+[C II] 157.7um, 1900GHz
+
 
 
 OH lines: From [Runco 2020](https://arxiv.org/pdf/2009.07293.pdf)

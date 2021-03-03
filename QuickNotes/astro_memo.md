@@ -52,3 +52,32 @@ Clustering approchach
 CP & Howk ARAA 2020
 
 Pepples+2019
+
+
+
+
+
+GRAVITY+ for cosmic distance:
+
+- Elipsing binaries, only in neighborhood of solar
+- Cepheids, but only about 10 sources
+- SN Ia, usable phase reference.
+- AGN reverberation mapping, calibrated L-R relation
+
+Grativity+ for SMBH
+
+- independently check the single epoch measurements of SMBH mass in the high-z
+
+
+
+IMBH: 
+
+Mezcua+2017
+
+recent summary: Greene+2020
+
+
+
+X-ray --> Density view
+
+SZ --> electron pressure View
