@@ -1,0 +1,120 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Basic notes taking example
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{astronotes/astronotes} % Document font size and equations flushed left
+
+\usepackage[english]{babel} % Specify a different language here - english by default
+
+\usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\NoteInfo{Notes} % Note information
+\Archive{Daily update} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{Distant, dusty star-forming galaxies} % Article title
+
+\Authors{Jianhang Chen\textsuperscript{1}*} % Authors
+\affiliation{\textsuperscript{1}\textit{European Sourthern Observatory, Garching, Germany}} % Author affiliation
+\affiliation{*\textbf{Email}: cjhastro@gmail.com} % Corresponding author
+
+\Keywords{SMG --- Starburst --- galaxy evolution} % Keywords - if you don't want any simply remove all the text between the curly brackets
+\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\Abstract{This daily updated notes for the PhD research project on distant, dusty star-forming galaxies.}
+
+%----------------------------------------------------------------------------------------
+%\setcounter{tocdepth}{3}
+%\makeatletter
+%\def\l@subsection{\@tocline{2}{0pt}{2.5pc}{5pc}{}}
+%\makeatother
+
+\begin{document}
+
+%\makeatletter
+%\def\l@subsection{\@tocline{2}{0pt}{1pc}{5pc}{}} 
+%\def\l@subsection{\@tocline{2}{0pt}{2pc}{6pc}{}}
+%\makeatother
+\maketitle % Output the title and abstract box
+
+\tableofcontents % Output the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introduction} % The \section*{} command stops section numbering
+%\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+
+\lipsum[1-3] % Dum text
+ and some mathematics $\cos\pi=-1$ and $\alpha$ in the text\footnote{And some mathematics $\cos\pi=-1$ and $\alpha$ in the text.}.
+
+%------------------------------------------------
+
+\section{Gas inflow and outflow}
+\subsection{Gas inflow}
+It is more difficult to identify gas inflow than outflow.
+Comparing outflow, inflow gas is thought to be metal poor.
+From standard ${\rm \Lambda}$CDM model, pristine gas from cosmic web can feed the star formation of the host.
+It can be essential for SMGs to maintain their extreme SFR.
+If such kind of bulk inflow do exist in SMGs, which can also be test by their absorption characteristics.
+The first detect such a strong evidence of metal-poor gas inflow by search SMGs in the surrounding of background QSOs \citep{Fu2021a}.
+The system thet found is quite interesting, which a bulk of absorption lines were detected from two QSOs.
+The two quasars have different distance to the SMG, but they show some consistancy in term of some metal absorption lines.
+
+Besides, several indirect methods also suggest the existing of metal-poor gas inflow in SMGs.
+The 
+
+
+\subsection{Gas outflow}
+
+\section{The fate of SMG}
+\subsection{Dark matter halo}
+
+\section{Proto-clusters}
+Proto-clusters have been discovered in different wavelength. 
+
+In submillimeter bands, previous hyper-luminous sources found by signle-dish telescope were found to host multiple members \citep{Oteo2018, Miller2018}. 
+Since then, there are several projects aiming to find more similar system.
+
+\phantomsection
+\section*{Acknowledgments} % The \section*{} command stops section numbering
+
+\addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
+
+So long and thanks for all the fish \citet{Oteo2018} and \citet{Miller2018}.
+\cite{}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\phantomsection
+%\bibliographystyle{apalike}
+\bibliographystyle{astronotes/astronotes}
+\bibliography{SMG.bib}
+
+%\addbibresource{sample.bib} % The filename of the bibliography
+%\usepackage[autostyle=true]{csquotes}
+
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+
+%\addbibresource{sample.bib} % The filename of the bibliography
+
+%\usepackage[autostyle=true]{csquotes}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
