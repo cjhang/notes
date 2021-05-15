@@ -1,4 +1,4 @@
-[Jy km/s or K km/s to flux pick](https://help.almascience.org/index.php?/Knowledgebase/Article/View/287)
+Jy km/s or K km/s to flux pick
 
 [Estimate flux peak of different beam](https://help.almascience.org/index.php?/Knowledgebase/Article/View/286/1/)
 

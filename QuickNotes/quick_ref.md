@@ -18,6 +18,22 @@ cp -R Dir1 Dir2 # copy with auto mergering
 
 
 
+## Git
+
+submodule
+
+```shell
+git submodule add https://github.com/<user>/rubber-band rubber-band
+git clone --recursive <project url>
+git submodule update --init --recursive 
+```
+
+
+
+```shell
+git clone --depth 1 <project url>
+```
+
 
 
 ## Docker
@@ -73,6 +89,14 @@ ffmpeg -r 10 -i tilted_ring_simple/ring%03d.png -s 744x320 -c:v libx264 -vf fps=
 
 
 
+## rsync
+
+```shell
+rsync -P source destination
+```
+
+reference [archlinux](https://wiki.archlinux.org/index.php/rsync)
+
 
 
 ## tmux
@@ -92,6 +116,7 @@ cmd mode
 swap-window -s 1 -t 2  # 交换1、2窗口
 swap-window -t 1       # 当前窗口和1号窗口交换
 move-window -t 1       # 将当前窗口移动到1号窗口位置
+kill-session           # kill current session
 ```
 
 ```shell
@@ -123,23 +148,6 @@ Create the session with the name of session_name.
 - `Ctrl+a` `d` Detach from the session
 
 
-
-
-## Git
-
-submodule
-
-```shell
-git submodule add https://github.com/<user>/rubber-band rubber-band
-git clone --recursive <project url>
-git submodule update --init --recursive 
-```
-
-
-
-```shell
-git clone --depth 1 <project url>
-```
 
 
 

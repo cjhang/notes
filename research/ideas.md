@@ -4,29 +4,62 @@
 
 ALMACAL is the ALMA ancillary project, which collects all the observations of the ALMA calibrators. 
 
-1. ~~ALMACAL time domain data, can be used to trace the gas filaments fast motion in the early Universe?~~
+1. Improve calibration of the calibrators
 
-   > - the residual of the central point source may dominate the noise, which will create some fake variational signal.
-
-2. Find the proto-group in deep small field observation? Galaxy group is smaller than galaxy cluster, so ALMACAL can be used to search for proto-groups in the early Universe.
-
-   > It is also very difficult to confirm their redshift. Beside, finding way to remove the residuals of in the final image can be critical for the faint objects in the calibrators' field.
+   > Possible reasons for the residual after point source subtraction:
+   >
+   > 1. Calibrator has been resolved. Maybe an iterative algorithm to improve the model? 
+   > 2. Some remaining phase error in the calibrated visibility
+   >
+   > Two things can be tried:
+   >
+   > 1. Build one observation from scratch, find the reason for bad calibration
+   > 2. Try point+gaussian model, try to capture the ears (maybe it need more parameter constrains) or more constrains on the model setup, maybe try more general tools
 
 3. Line searching, 
 
    > OH$^+$ CH$^+$ are low density tracers, they are usually observed in obsorption, which can be used to search gas inflow and outflow of the blazers.  [Barte+2020]
+   >
+   > One thing should keep in mind is the properties of the calibrators themselves. They were blazers, no very high-accuracy redshift, and no much information about their host galaxies.
+
+4. Magnetic field
+
+   > Some of the calibrators should be the polorized calibrators, but the science projects may not focus on the magnetic field. Searching all the related project, and to see if there is opportinity for blind magnetic field survey.
+   >
+   > Maybe the magnetic filed of the calibratos themselves can be insteresting as well, like the time variation
+   
+6. Source finding algorithm for interferometric image map
+
+   > Do something like inverse the imaginary, or real part to create a conterpart image, then finding source in two complementary images
+   
+7. ~~ALMACAL time domain data, can be used to trace the gas filaments fast motion in the early Universe?~~
+
+   > - the residual of the central point source may dominate the noise, which will create some fake variational signal.
+
+
+
+## Deep Field Science
+
+1. Find the proto-group in deep small field observation. 
+
+   > Galaxy group is smaller than galaxy cluster, which should be more common and more releavant for galaxy evolution in a shorter timescale
+
+2. 
 
 ## Early Universe
 
 1. There is initial mass function for stars, how about the initial mass function for galaxies? Will that matters for the proto-cluster formation or can it be the characteristics to distinguish different evolution stage of clusters? Any possible for the initial mass function of black whole seed at the reionization era?
 
+   > Maybe it is a long time project. Large sample of photo-clusters is essential.
+
 2. **Determine the kinematics of [C II] and the other gas phase tracer**
 
    > The [C II] has been widely used to study the kinematics or even the dynamics of high-z galaxies. However, little researchs have been focused on their validity. The FIEA on SOFIA can be the best instrument to study the [C II] kinematics of local spiral or starburst galaxies.
    >
-   > The target can also be some metal-poor or low-ionization dwarf
-   >
    > **Using simalma to test the spatial resolution effect on the interpretation of the kinematics from [C II]**
+   >
+   > - [ ] Using data from SOFIA as the input
+   > - [ ] Missing flux issue? We only see the denser structure
 
 3. Study the role of star formation efficiency in spiral. Any enhancement?
 
@@ -36,11 +69,13 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 
 4. Find MW analoges in the early Universe
 
-   > SPT0418-47 galaxy is thought to be alike MK from their kinematic signature. How about the SED and the environment?
+   > SPT0418-47 galaxy is thought to be alike MK from their kinematic signature. How about the SED and the environment? (**It also has much higher SFR than MW**)
 
 5. **Are high-z starburst galaxies are mostly regular rotation dominate?**
 
-   > From current high resolution [C II] observations, it seems that most galaxies with strong [C II] are rotation dominated. Since most of these galaxies only barely resolved, so it definitely need the kinematics from other gas tracer. **Maybe one proposal for next ALMA cycle**
+   > From current high resolution [C II] observations, it seems that most galaxies with strong [C II] are rotation dominated. Since most of these galaxies only barely resolved, so it needs the confirmation from higher angular observations and it would be good to have the kinematics of other gas tracers.
+   >
+   > One interesting simulation is to put the local detailed studied  into high redshift, to test the information we can get. Local candidates: Arp220
 
 6. ~~Measuring the magnetic filed in the submillimeter bright galaxies and the Lyman-a galaxies in very high-z galaxies, additional evidence of the high turbulence?~~
 
@@ -50,29 +85,68 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 
    > The first ideal target could be the strong lensed source, they were bright and could reach a relative high angular resolution.
    >
-   > - Red Radio Ring (Geach+2015)
-   >- [ ] read the review paper of magnetic field measures, and test the possibility to measure the magnetic field in high-z Universe
+   > - Red Radio Ring (Geach+2015), extremely bright (**Maybe the only one at the moment**)
+   > - SPT0418-47, cold gas disk favor highly ordered magnetic field
+   >
+   > Two spectral window:
+   >
+   > 1. Far-infrared
+   >
+   >    - For local Universe, starburst systems have already revealed strong dust polarization
+   >
+   >    - For high-z lensed galaxies, it is in the higher ALMA band >B7
+   >
+   > 2. submilimeter
+   >
+   >    - For local Universe, the prototype can be M82 and NGC253
+   >
+   >    - For high-z lensed galaxies, it is in the ALMA lower band, <B4
+   >
+   > Possible plan:
+   >
+   > 1. NGC253, single dish submillimeter polarzation mosac observation
+   > 2. z~2-3, high-z strong lensed starburst system
+
+   
 
 8. The rotation curve of proto-cluster: resolved central galaxies + general circular motion of the satellite galaxies
 
-   > The best candidate for such a testing is the two hypoluminous proto-clusters find in 2018
-   
-9. The connection bettween lyman-break galactic proto-cluster and the SMG photo-cluster
+   > The best candidate for such a testing is the two hypoluminous proto-clusters find in 2018 (Oteo+2018, Miller+2018)
+   >
+   > One important step is to remove the peculiar motion of the galaxies, which should be intensively rely on models
+
+9. The evolution stages of photo-cluster
+
+   > Not only for Lyman-break and SMG, there are also proto-clusters selected from radio AGN and deep field spectral and photometrical surveys. One thing worth a try is puting all the confirmed photo-cluster together, trying to make the biggest sample to study them systematically. 
+   >
+   > 1. The best starting point is the HUDF, where deep ALMA, Muse, and VLA observation are both available
 
 10. X-ray survey of SMGs
 
     > 1. One possible project is to make a small survey of Chandra observation for ~10 brightest, but not lensed SMG, to see their X-ray occupation. 
+    >2. Based on the VLA observation of several SMGs, we can predict its X-ray luminosity based on their 
+
+11. Diffuse emission from dust
+
+    > Now most SMG were found to be compact in their dust size, is it true or just because the spatial filtering of interferometer. Combine single dish with long time interferometry. 
     >
-    > 2. Based on the VLA observation of several SMGs, we can predict its X-ray luminosity based on their 
+    > 1. Maybe proposing new single dish observation (JCMT and APEX)
 
 ## AGN
 
-1. Find timescale than AGN activity before  star formation, find evidence of AGN enhance star formation. Jet produce ring star formation, alpha/Fe abundance.
-2. Gas replenish in the Elliptical galaxies, the frequency, the importance, the origin. High star formation efficiency in early type galaxies 
+1. AGN timescale issue.
+
+   > The AGN role in starbutst galaxies. Currently it very hard to find AGN in SMG, due the dust obscuration or also because their short timescal. Repeating AGN in SMG
+
+2. Morphology transition
+
+   > Connecting: minor merger + size increasement + AGN Intermittence
 
 ## Cosmological evolution of baryons
 
 1. The available molelular gas reservior is somehow consistent with cosmic star formation trend. However, the atomic gas follows the general slihtly flat trend from early Universe to local Universe. One possible issue may be the dection of atomic gas in the early Universe. 
+
+
 
 ## Local galaxies
 
@@ -89,6 +163,14 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 4. Molecular gas and dust properties in super-thin galaxies
 
    > Super-thin galaxies were though to have very cold stellar disk and rich in atomic gas. They are dominated by dark matter in all scales of the galaxy. 
+
+5. Red spiral
+
+   > Red spiral may be a transient stage of changing from spiral to ellipitcals
+   >
+   > Offering clues about the size increasing from minor or major merger at later stage
+   >
+   > Testing the ALMA ACA proposal for red spiral galaxies, maybe some new sample from HI-MaNGA
 
 ## Rotational curve
 
@@ -107,16 +189,16 @@ Study how the rotational curve changed from Cusp to Core:
 5. Proto-cluster, if the all the members gathered in one dark matter halo, is it possible to measure the rotational curve of the cluster by the cluster members?
 
    > It may not be a good idea, if the proto-cluster cannot be regarded as one fully thermalized system
+   >
+   > They may also be dominated by peculiar velocity, to unveil the rotational velocity, the peculiar velocity has to been removed first
 
 
 
-6. Study the rotational curve of the disk galaxy at high-z, from gravitational lensing? 
+6. ~~Study the rotational curve of the disk galaxy at high-z, from gravitational lensing?~~～～~~ 
 
-   > They may underwent fewer feedback than local galaxies, which can preserve their cusp dark matter profile?
+   > Gravitional lensing preserve surface density, to constrain the rotational curve, we need to detect the true faint, extend region which cannot boosting by lensing
 
 ## IMBH
-
-1. IMBH has a variability scale of hours. IFU opportunity to search for off-nuclear IMBH, search for manga repeat observation and test the possibility of china space 2.5meter telescope. 
 
 ## Cosmology
 
@@ -132,57 +214,13 @@ Differential phase difference:
 
 Power Spectra Distribution:
 
-1. Anything related with SSP fitting? 
-
-   
+1. Combining PCA and SSP least square fitting
 
 
 
-# PhD life
+## Others
 
-
-
-## Knowledge needed for PhD
-
-1. Bayesian inference
-
-   > - [ ] Systematically study the Baysian inference with a fixed plan
-   >
-   > Maybe one software to model the kinematics based on Bayesian inference?
-   >
-   > http://arxiv.org/abs/2011.12023 can be a good reference.
-
-2. SED fitting, CIGAL, MBB
-
-3. Dust physics
-
-
-
-
-
-# Questions
-
-Questions to be questioned:
-
-1. Why the interferometers has much accurate astrometry? Due to the phase calibrator?
-
-   > Because the phase calibrator. The phase calibrator can have very accurate astrometry, in this case, we can also achieve very high accurate relative position to phase calibrator. As a result, we can achieve much higher position accurate for our science target.
-
-
-
-
-
-MUSE observations of 37 3C low-z radio galaxies, overlap with three ALMA calibrator:
-
-- 3c196.1
-- 3c456
-- 3c459
-- 3c287 (possible)
-- 3c327 (possible)
-
-
-
-
+1. Cross matching all sky Wise and Herchel with strong-lensed target found by machine learning algorithm. Targeting more high-z lensed galaxies.
 
 # Non-astronomy
 

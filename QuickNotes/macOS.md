@@ -57,6 +57,8 @@ Example plist file
 </dict>
 ```
 
+References [1](https://stackoverflow.com/questions/132955/how-do-i-set-a-task-to-run-every-so-often)
+
 
 
 ### Web Server
@@ -140,7 +142,17 @@ diskutil eraseVolume free none diskXsY
 tell application "System Events"
 	get properties of every menu bar item of every menu bar of process "SystemUIServer"
 end tell
+
+\*show notification*\
+osascript -e 'display notification "hello world!" with title "Greeting" subtitle "More text"'
+
+\*Show alert*\
+osascript -e 'display alert "Hello World!" message "longer text can be added in the message field and it will be all shown on the pop-up alert."'
 ```
+
+References: [1](https://code-maven.com/display-notification-from-the-mac-command-line)
+
+[Online generator](http://launched.zerowidth.com/) 
 
 
 
@@ -191,3 +203,22 @@ remove system update red dot
 defaults delete com.apple.preferences.softwareupdate LatestMajorOSSeenByUserBundleIdentifier && softwareupdate --list
 ```
 
+
+
+Screen Sharing:
+
+```shell
+/System/Library/CoreServices/Applications/Screen Sharing.app
+```
+
+
+
+## Setting the ls colors
+
+https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/
+
+https://superuser.com/questions/528228/how-can-i-configure-the-color-of-ls-directory-under-zsh
+
+For linux https://askubuntu.com/questions/466198/how-do-i-change-the-color-for-directories-with-ls-in-the-console
+
+For bash:  https://linuxhint.com/ls_colors_bash/

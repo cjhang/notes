@@ -75,7 +75,7 @@ Earth revolution speed: 29.29~30.29 km/s
 
 Lyr = 63000 AU
 
-1rad = 206265 arcsec => $206265 = \frac{180}{\pi}\times3600$
+1rad = 206265 arcsec => $206265 = \frac{180}{\pi}\times3600$ = 206264.80624709636
 
 
 

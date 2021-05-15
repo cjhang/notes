@@ -81,3 +81,21 @@ recent summary: Greene+2020
 X-ray --> Density view
 
 SZ --> electron pressure View
+
+
+
+Matthee+2019, upper limit for the dust content in LAEs. Maybe very young system
+
+Matthee+2017 [C II] in LAEs, clumpy structures
+
+Matthee+2021, higher Lya EW, the lower stellar metallicity
+
+
+
+## Dynamics:
+
+Solar system, 4.568 Gyr, 
+
+Planets: e<=0.1, Mercury e=0.21, coplanar, < 1.9deg
+
+Uranus have a almost penperdicular rings, 98deg tilt

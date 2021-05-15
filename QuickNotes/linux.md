@@ -230,6 +230,12 @@ https://docs.fedoraproject.org/en-US/Fedora/22/html/Multiboot_Guide/common_opera
 
 [Raid setup](https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04)
 
+[Arch linux raid wiki](https://wiki.archlinux.org/index.php/RAID)
+
+## LVM
+
+[LVM setup](https://www.digitalocean.com/community/tutorials/how-to-use-lvm-to-manage-storage-devices-on-ubuntu-16-04)
+
 
 
 ## Compile software
@@ -277,5 +283,23 @@ cd build
 make -j 4
 sudo make install
 export LD_LIBRARY_PATH="/opt/glibc-2.14/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+```
+
+
+
+## Install software from source
+
+```shell
+./configure --prefix=/opt/local
+make
+make install
+```
+
+
+
+## Connect to the Server Using SSH Tunneling
+
+```shell
+ssh -L server_port:localhost:local_port username@server_ip
 ```
 

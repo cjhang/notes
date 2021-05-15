@@ -540,9 +540,15 @@ x ks chs
 | Volkwagon          | Hobby 爱好      |
 | Krankenhaus 医院   | Job 临时工作    |
 | großvater 爷爷     | Restaurant 饭店 |
-| Klassenzimmer 教室 | Orange          |
+| Klassenzimmer 教室 | or              |
 
+\1. 多音节词只有一个重度音节；
 
+\2. 德语词的词重音多在第一个音节上，但也有例外，如带非重度前缀时；
+
+\3. 复合词的词重音一般在第一个词上；
+
+\4. 外来词的词重音一般在倒数第一或第二个音节上。
 
 
 

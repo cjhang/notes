@@ -52,4 +52,106 @@ Sandro Tacchella et al. [arXiv: 2102.12494](https://arxiv.org/abs/2102.12494)
 
 To recoverge the SFH of the massive ellipticals, the authors mainly benifit from two things, the first one is the high quality spectra taken from Keck II/DEIMOS and the new non-parametric, Baysian based SFH fitting code *Prospector*. Fig-1 shows the SFHs of their sample. , some of them quench very rapidly while some maintain a stable SFR for a long time. They are quite different from each other, indicating the complex queching paths. On the other hand, they found one intesting pattern in Fig-2, which shows the early formed galaxies have a much shorter star-forming timescale. They also found rejuvenation and "later bloomers" are quite common and they are not exactly following the SFMS.
 
-This is a very nice paper, which provides an independent way to contrain the progenitors of ellipticals. If we put SMGs into Fig-2. they should mosting gathered around the pink and yellow lines. However, **we know SMG can use their molecular gas reservior with in one Gyr**. That may means we definitely needs quite amount of gas inflow to support the formation of their stellar mass.
+This is a very nice paper, which provides an independent way to contrain the progenitors of ellipticals. If we put SMGs into Fig-2. they should mosting gathered around the pink and yellow lines. However, we know SMG can use their molecular gas reservior around 0.1 Gyr (Bothwell+2013). That means we definitely needs quite amount of gas inflow to support the formation of their stellar mass.
+
+
+
+---
+
+---
+
+
+
+
+
+
+
+
+
+**Start with new format: overview of week & the paper of the week**
+
+---
+
+---
+
+## March
+
+1. [McLeod et al. astro-ph: 2009.03176](https://arxiv.org/abs/2009.03176) Stellar mass function over the last twelve billion years 
+
+2. Connection between the compact SMGs with local Ellipticals
+3. Radio-loud AGN in the early Universe
+
+
+
+## March
+
+This week several papers focus on the AGN, the insteresting ones:
+
+1. [Radcliﬀe et al.](http://arxiv.org/abs/2103.08575) **Nowhere to Hide: Radio-faint AGN in the GOODS-N ﬁeld **The performance of difference AGN selecting methods on a sample of VLBI AGN sample: no single method can find all VLBI AGN; X-ray current are not sensitive for highly obscured AGN; a fraction of VLBI AGN in starburst system (another evidence for the AGN may play a role in SMGs)
+2. [Efstathious et al.](https://arxiv.org/abs/2103.08032) Another SED confirmed AGN dominated starburst galaxy at z~4.3: Good example to show the importance of AGN for SMGs, but again SED may only sensitive to this kind of strong AGN
+
+[Andrea Ferrara & Celine Peroux](http://arxiv.org/abs/2103.06887) Analysed the three ways of dust destruction which aims to explain the dust decreasing from z=1->0, they conclude that dust destroyed by SN shocks have been overestimated before
+
+[Anna Ferre-Mateu](https://arxiv.org/abs/2103.09241) Formation channel of low-mass elliptical galaxies: diver formation channel
+
+
+
+## March
+
+### AGN
+
+1. [McKinney et al.](http://arxiv.org/abs/2103.12747) **DUST-ENSHROUDED AGN CAN DOMINATE HOST-GALAXY-SCALE COLD-DUST EMISSION** Discussed the cold dust emission powered by obscured AGN. The standard torus structure play a minor role in the far-infrared emission, but the diffused dust of the host galaxy can also be heated by radiative tranfer from the obscured AGN.  
+
+## April
+
+### Week-1
+
+**SMG**
+
+[Cochrane et al]() Multi-wavelength and High-res observation of one starburst galaxy at z~2.2. Two important points we can learn from this source:
+
+1. Shortwavelength (UV and optical data) can be biased for infering the dusty galaxies' properties
+2. Compact dust emission not means the galaxy is also compact
+
+
+
+[Rybark et al.](http://arxiv.org/abs/2101.00841) Ultra faint [C II] in a metal-poor dwarf galaxy at z~2: Taking advantage of the strong lensing, the author try to search the [C II] and CO(2-1) in z~2 metal poor dwarf galaxy, [C II] shows a tentative detection while CO(2-1) remains undetected. This kind of galaxy can be important at EoR. But also maybe strong lensed source are not the ideal target for somehow extended [C II].
+
+[Piyush Sharda](http://arxiv.org/abs/2007.02678) With improvement in resolution which is crutial to capture the dynamo of evolution of magnetic field, they found magnetic field effect is alway non-negligible for the formation of Pop-III star and could largely change the primodial IMG. **Turbulence amplification for primodial magnetic field is very efficient.****
+
+[W. Bednarek & J. Sitarek](http://arxiv.org/abs/2102.11589) An instersting paper discussed the absorption of $\gamma$ ray when one luminous star across the beam of jet. They focus on the spectra of $\gamma$-ray, which will harden at the hundreds of Gev. **One naive question may be: what is their spectral feature at sub-mm and radio band? Can it be used to study the vicinity of SMBH and the stars?****
+
+[Jisu Kang et al](http://arxiv.org/abs/2104.00672) Systematic globular cluster searching in 12 nearby massive compact elliptical galaxies, they found they have larger fraction of red globular fraction 0.5, which is larger than the fraction of 0.3 in giant elliptical galaxies. The more red globular cluster means most of the stellar mass formed or accreted in more early time. **Maybe another contrain for the evolution path from SMG to Ellipitcals**  
+
+### Week-2
+
+[Nianyi Chen](arXiv:2104.00021v2) Discussed the importance of Dymaic Friction on the SMBH. With dynamic friction, SMBH can be more easily sink to galactic center and will enhance the cosmological merger rate  
+
+[F. Fragkoudi](F. Fragkoudi) They disscussed the Fast-rotating bars of different simulation in the ΛCDM cosmological paradigm. The dynamic fraction of Dark matter can slow down the rotaion of bars. While they found the major cosmological simulation (Eagle and Illustris) tend to prodduce slow rotating bars, but the zoom-in simulatio of Augriga sucessfully produced the fast rotating bars. The main difference of Augriga is that it implemented weaker feedback and allow higher effeciency to convert the gas into stars.
+
+[Yuma Sugahara](arXiv:2104.02201v1) Try to put a bright Lyman-break galaxy into BPT diagram. This galaxy had already been detected in [CII]158um and [OIII]88um , so they try to detect the [N II]122um. Because it's non-dectection, so they can only put upper limits. From where I found another paper by Allison L. Strom+2017. An old paper, but quite intersting, who put z~2 star-forming galaxies into BPT diagram, and got a new tracking line.
+
+### Week-3
+
+Two paper discussed the AGN in metal poor dwarf galaxies:
+
+- [Colin J. Burke](http://arxiv.org/abs/2011.10053) Detections of AGN-like variation on 3 metal-poor dwarf galaxies, possible the signature of ~100 Msun BH signature.
+
+- [Cann Jenna](http://arxiv.org/abs/2104.05689) Detection of $Si_{6} 1.963$ um coronal line in the metal-poor dwarf SDSS~J160135.95+311353.7
+
+[S. Goswami](https://arxiv.org/abs/2104.05680) IMF's effect on the galactic chemical enrichment, they emphasized the importance of massive star (stars as massive as 350Msun) are essential to explain the chemical evolution of Galacitic thick disk.
+
+
+
+## May
+
+### Week-2
+
+[Angela Collier](http://arxiv.org/abs/2105.04698) Discussed the coupling with stellar bar and the dark matter halo. The found the presence of strong stellar bar will also form a thick, parallel dark matter bar. It can be a place to search for dark matter annihilation signals.
+
+[Kunihiko Tanaka](http://arxiv.org/abs/2105.04579) They discussed the [C I] in the central molecular zone and circumnuclear disk. It is a work followed by their previous finding that enhanced [C I] had been observed in the east of SgA complex. In this work, they complete a survey of [C I] covering almost all of the CMZ. They results show that [C I] comes from low-excitation gas with 20-50 K, while they were suppressed in high-excitation zone. Also a ring like [C I] is observed, mostly likely due to the SNR-cloud interaction
+
+# Reviews
+
+Dar matter and early Universe: a review [arXiv:2104.11488](https://arxiv.org/abs/2104.11488)
+

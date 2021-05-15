@@ -1,0 +1,28 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: SMG.aux
+The style file: astronotes/astronotes.bst
+Database file #1: SMG.bib
+Database file #2: /Users/jchen/Documents/papers/paper_library.bib
+Repeated entry---line 2427 of file /Users/jchen/Documents/papers/paper_library.bib
+ : @article{Fu2021a
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3653 of file /Users/jchen/Documents/papers/paper_library.bib
+ : @article{Ivison2019
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5418 of file /Users/jchen/Documents/papers/paper_library.bib
+ : @article{Miller2018
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5951 of file /Users/jchen/Documents/papers/paper_library.bib
+ : @article{Oteo2018
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 7872 of file /Users/jchen/Documents/papers/paper_library.bib
+ : @article{Symeonidis2021
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+(There were 5 error messages)
