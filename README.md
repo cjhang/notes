@@ -15,3 +15,6 @@ To make the long note more orgnized and math formulars rendered propertly, two p
 - [Github Toc](https://chrome.google.com/webstore/detail/github-toc/nalkpgbfaadkpckoadhlkihofnbhfhek?hl=en)
 
 For desktop users, [Typora](https://typora.io/) can be the ideal markdown reader which supports math formulars, table of content and [Mermaid diagrams](https://mermaid-js.github.io)
+
+# About
+This repository will be updated every day
