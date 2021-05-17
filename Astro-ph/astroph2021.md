@@ -151,7 +151,13 @@ Two paper discussed the AGN in metal poor dwarf galaxies:
 
 [Kunihiko Tanaka](http://arxiv.org/abs/2105.04579) They discussed the [C I] in the central molecular zone and circumnuclear disk. It is a work followed by their previous finding that enhanced [C I] had been observed in the east of SgA complex. In this work, they complete a survey of [C I] covering almost all of the CMZ. They results show that [C I] comes from low-excitation gas with 20-50 K, while they were suppressed in high-excitation zone. Also a ring like [C I] is observed, mostly likely due to the SNR-cloud interaction
 
+### Week-3
+
+[Aditya Chowdhury](http://arxiv.org/abs/2105.06773) It is the second paper of the same group which stacking the GMRT archive data to search for HI 21cm emission  at hight redshift. Last time [Aditya Chowdhury](http://www.nature.com/articles/s41586-020-2794-7), they have push the detection to redshift around z~1. In this new paper, they stacked the data of star forming galaxies at z = 1.18 − 1.39, and also reached a 5sigma HI detection. Their result provide a new insight that the HI cannot sustain the star forming activity at z<1.
+
 # Reviews
 
 Dar matter and early Universe: a review [arXiv:2104.11488](https://arxiv.org/abs/2104.11488)
+
+AGN reverberation mapping review: from X-ray corona to dusty torus [arXiv](https://arxiv.org/abs/2105.06926)
 

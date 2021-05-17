@@ -36,7 +36,13 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 
    > - the residual of the central point source may dominate the noise, which will create some fake variational signal.
 
+6. Adaption of high contrast imaging to the calibrators' imaging
 
+   > In field of circumstellar disk or exoplanet fields, high contrast imaging technologies have been widely used, including Angular Diﬀerential Imaging (ADI, [Marois 2006](https://ui.adsabs.harvard.edu/abs/2006ApJ...641..556M/abstract))  and Diﬀerential Polarimetric Imaging (DPI, [van Holstein 2018](https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..64V/abstract)).
+   >
+   > For ALMACAL, both of the two method can be tested
+   >
+   > See also [Beuzit 2019](https://ui.adsabs.harvard.edu/abs/2019A%26A...631A.155B/abstract) for more information about SPHERE
 
 ## Deep Field Science
 

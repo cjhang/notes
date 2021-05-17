@@ -38,3 +38,8 @@ from IPython.display import set_matplotlib_formats
 set_matplotlib_formats('png')
 ```
 
+ ```python
+ im = ax.imshow()
+ plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+ ```
+
