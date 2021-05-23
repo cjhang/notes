@@ -88,7 +88,7 @@ This is a very nice paper, which provides an independent way to contrain the pro
 This week several papers focus on the AGN, the insteresting ones:
 
 1. [Radcliﬀe et al.](http://arxiv.org/abs/2103.08575) **Nowhere to Hide: Radio-faint AGN in the GOODS-N ﬁeld **The performance of difference AGN selecting methods on a sample of VLBI AGN sample: no single method can find all VLBI AGN; X-ray current are not sensitive for highly obscured AGN; a fraction of VLBI AGN in starburst system (another evidence for the AGN may play a role in SMGs)
-2. [Efstathious et al.](https://arxiv.org/abs/2103.08032) Another SED confirmed AGN dominated starburst galaxy at z~4.3: Good example to show the importance of AGN for SMGs, but again SED may only sensitive to this kind of strong AGN
+2. [Efstathious et al.](https://arxiv.org/abs/2103.08032) Another SED confirmed AGN dominated starburst galaxy at z~4.3: Good example to show the importance of AGN for SMGs, but again SED may only sensitive to this kind of strong AGN. **They data analysis should be questioned**
 
 [Andrea Ferrara & Celine Peroux](http://arxiv.org/abs/2103.06887) Analysed the three ways of dust destruction which aims to explain the dust decreasing from z=1->0, they conclude that dust destroyed by SN shocks have been overestimated before
 
@@ -137,7 +137,7 @@ Two paper discussed the AGN in metal poor dwarf galaxies:
 
 - [Colin J. Burke](http://arxiv.org/abs/2011.10053) Detections of AGN-like variation on 3 metal-poor dwarf galaxies, possible the signature of ~100 Msun BH signature.
 
-- [Cann Jenna](http://arxiv.org/abs/2104.05689) Detection of $Si_{6} 1.963$ um coronal line in the metal-poor dwarf SDSS~J160135.95+311353.7
+- [Cann Jenna](http://arxiv.org/abs/2104.05689) Detection of ${\rm Si}_{6}\ 1.963$ um coronal line in the metal-poor dwarf SDSS~J160135.95+311353.7
 
 [S. Goswami](https://arxiv.org/abs/2104.05680) IMF's effect on the galactic chemical enrichment, they emphasized the importance of massive star (stars as massive as 350Msun) are essential to explain the chemical evolution of Galacitic thick disk.
 
@@ -154,6 +154,18 @@ Two paper discussed the AGN in metal poor dwarf galaxies:
 ### Week-3
 
 [Aditya Chowdhury](http://arxiv.org/abs/2105.06773) It is the second paper of the same group which stacking the GMRT archive data to search for HI 21cm emission  at hight redshift. Last time [Aditya Chowdhury](http://www.nature.com/articles/s41586-020-2794-7), they have push the detection to redshift around z~1. In this new paper, they stacked the data of star forming galaxies at z = 1.18 − 1.39, and also reached a 5sigma HI detection. Their result provide a new insight that the HI cannot sustain the star forming activity at z<1.
+
+**AGN**
+
+1. [M. Pereira-Santaella](arXiv:2104.08238v2) The sub-kpc view of the 220 GHz continuum. This work is based on PUMA project, which is a ALMA and MUSE survey of local ULIRGs. The main goal of this work is to search for AGN signatures in these local ULIRGs. Based on their 220GHz dust continue and CO(2-1), they have derived the molecular gas surface density; from SED fitting, their LIR can also be well constrained. They found their LIR cannot be explained by maximum starburst activity with reasonable gas deplete time, thus give an indirect evidence of the presence of strong AGN in these ULIRGs.
+
+### Week-4
+
+[Fensch 2021](arXiv:2011.12966v3) Followed the discussion of [Faure 2021](http://adsabs.harvard.edu/abs/2021MNRAS.502.4641F), Fensch et al. studied the existance of giant molecular cloud in high-z galaxies with different gas fraction. They mainly found higher gas fraction will lead to form large and long-lived molecular cloud, and the feedback has a secondary effect on the existance giant clumps.
+
+Magnetic field:
+
+1. [Borlaff et al.](arXiv:2105.09315v1) This work has systematically compared the magnetic field oritation at different wavelength (Far-IR 154um+3cm+6cm). They found the polarisation at different wavelength may not trace the same magnetic field structure.
 
 # Reviews
 
