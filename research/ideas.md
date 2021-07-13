@@ -32,10 +32,6 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 
    > Do something like inverse the imaginary, or real part to create a conterpart image, then finding source in two complementary images
    
-7. ~~ALMACAL time domain data, can be used to trace the gas filaments fast motion in the early Universe?~~
-
-   > - the residual of the central point source may dominate the noise, which will create some fake variational signal.
-
 6. Adaption of high contrast imaging to the calibrators' imaging
 
    > In field of circumstellar disk or exoplanet fields, high contrast imaging technologies have been widely used, including Angular Diﬀerential Imaging (ADI, [Marois 2006](https://ui.adsabs.harvard.edu/abs/2006ApJ...641..556M/abstract))  and Diﬀerential Polarimetric Imaging (DPI, [van Holstein 2018](https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..64V/abstract)).
@@ -43,14 +39,10 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
    > For ALMACAL, both of the two method can be tested
    >
    > See also [Beuzit 2019](https://ui.adsabs.harvard.edu/abs/2019A%26A...631A.155B/abstract) for more information about SPHERE
+   
+6. Check the overall polarization properties of SMGs close to the
 
-## Deep Field Science
-
-1. Find the proto-group in deep small field observation. 
-
-   > Galaxy group is smaller than galaxy cluster, which should be more common and more releavant for galaxy evolution in a shorter timescale
-
-2. 
+   > First target could be the famous calibrator J1058+0133
 
 ## Early Universe
 
@@ -58,20 +50,13 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 
    > Maybe it is a long time project. Large sample of photo-clusters is essential.
 
-2. **Determine the kinematics of [C II] and the other gas phase tracer**
-
-   > The [C II] has been widely used to study the kinematics or even the dynamics of high-z galaxies. However, little researchs have been focused on their validity. The FIEA on SOFIA can be the best instrument to study the [C II] kinematics of local spiral or starburst galaxies.
-   >
-   > **Using simalma to test the spatial resolution effect on the interpretation of the kinematics from [C II]**
-   >
-   > - [ ] Using data from SOFIA as the input
-   > - [ ] Missing flux issue? We only see the denser structure
-
-3. Study the role of star formation efficiency in spiral. Any enhancement?
+2. Study the role of star formation efficiency in spiral. Any enhancement?
 
    > This thought comes out when I read the study about the Milky Way's spiral arms. They did not find significant strengthen of SFE in the spiral arms. They argued the large star formation surface density is mainly because the higher efficiency of converting atomic hydrogen to molecular gas.
    >
    > Another crazy idea: it is possible the molecular gas are also not formed in the spiral arms, but only due to some dynamic friction+gravitational contraction?
+   >
+   > The large program ALMA-PHANGS can be the ideal project to answer this Question.
 
 4. Find MW analoges in the early Universe
 
@@ -83,15 +68,11 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
    >
    > One interesting simulation is to put the local detailed studied  into high redshift, to test the information we can get. Local candidates: Arp220
 
-6. ~~Measuring the magnetic filed in the submillimeter bright galaxies and the Lyman-a galaxies in very high-z galaxies, additional evidence of the high turbulence?~~
-
-   > The kinetic SZ effect and the synchrotron are both hard to measure at early Univere, but it definitely important for future surveys
-
 7. Try to observe the magnetic at high-z galaxies.
 
    > The first ideal target could be the strong lensed source, they were bright and could reach a relative high angular resolution.
    >
-   > - Red Radio Ring (Geach+2015), extremely bright (**Maybe the only one at the moment**)
+   > - Red Radio Ring (Geach+2015), extremely bright
    > - SPT0418-47, cold gas disk favor highly ordered magnetic field
    >
    > Two spectral window:
@@ -111,9 +92,7 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
    > Possible plan:
    >
    > 1. NGC253, single dish submillimeter polarzation mosac observation
-   > 2. z~2-3, high-z strong lensed starburst system
-
-   
+   > 2. z~2-3, high-z strong lensed starburst system, targeting the rest-frame submillimeter band
 
 8. The rotation curve of proto-cluster: resolved central galaxies + general circular motion of the satellite galaxies
 
@@ -130,29 +109,33 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 10. X-ray survey of SMGs
 
     > 1. One possible project is to make a small survey of Chandra observation for ~10 brightest, but not lensed SMG, to see their X-ray occupation. 
-    >2. Based on the VLA observation of several SMGs, we can predict its X-ray luminosity based on their 
+    >2. eRosita full sky survey can be the ideal survey to search such a correlation
 
 11. Diffuse emission from dust
 
     > Now most SMG were found to be compact in their dust size, is it true or just because the spatial filtering of interferometer. Combine single dish with long time interferometry. 
     >
     > 1. Maybe proposing new single dish observation (JCMT and APEX)
+    
+10. Comparing the stellar kinematics and the gas kinematics
+
+    > Stellar continuum could be difficult to get, but the targeting the stellar absorption can be viable
 
 ## AGN
 
 1. AGN timescale issue.
 
    > The AGN role in starbutst galaxies. Currently it very hard to find AGN in SMG, due the dust obscuration or also because their short timescal. Repeating AGN in SMG
+   >
+   > Several methods have been tried to constrain AGN duty cycle:
+   >
+   > 1. Radio lobes: Combining radio observations at different wavelengths (particular VLA + LOFAR), multipule radio lobes have been revealed and resolved. Their spectral slope can be used to constrain their age and lifetime, thus can constrain the AGN duty cycle. [Biava el al. 2021]
+   > 2. Star formation history from stellar population synthesis: based on volume limited sample, AGN host galaxies has the same yong stellar population as the SFG. So their fraction generally reveal the AGN lifetime. [L. Burtscher et al. 2021]
+   > 3. Stacking: stacking has been extensively used to found hidden or obscured AGN [Cassandra Hatcher et al 2021, M. Pereira-Santaella et al 2021], somehow they all support much higher appearances.
 
 2. Morphology transition
 
    > Connecting: minor merger + size increasement + AGN Intermittence
-
-## Cosmological evolution of baryons
-
-1. The available molelular gas reservior is somehow consistent with cosmic star formation trend. However, the atomic gas follows the general slihtly flat trend from early Universe to local Universe. One possible issue may be the dection of atomic gas in the early Universe. 
-
-
 
 ## Local galaxies
 
@@ -165,10 +148,16 @@ ALMACAL is the ALMA ancillary project, which collects all the observations of th
 3. Magnetic field in local interacting galaxies
 
    > It is a idea come from the study of magnetized filaments in Galactic center, [Coughlin et al.](https://arxiv.org/abs/2010.13790) have proposed that the tidal disruption may also play a role for the formation of the magnetic field. So it would be interesting to search the magnetic field in the tidal disrupted galaxies.
+   >
+   > Possible project:
+   >
+   > 1. ALMA polarized observation for local interacting galaxies. To check the strength of dust polarization of local interacting galaxies and check the tidal disruption as one origin of magnetic field formation
 
 4. Molecular gas and dust properties in super-thin galaxies
 
    > Super-thin galaxies were though to have very cold stellar disk and rich in atomic gas. They are dominated by dark matter in all scales of the galaxy. 
+   >
+   > Also: Maybe magnetic field observation for super-thin galaxies? As one attempt to highlight the importance of B
 
 5. Red spiral
 

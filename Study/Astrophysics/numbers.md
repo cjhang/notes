@@ -197,3 +197,7 @@ Local Group: the Group contains the M31 (Andromeda) and Milky Way. It has a diam
 
 Local Volume: centered in the Local Group with a radius of 10 Mpc. Including several groups like: Sculptor Group, Centaurus A Group. Most of the group members have accurate distance measurements.
 
+
+
+![Radio Emission from Normal Galaxies](numbers.assets/fig1.gif)
+

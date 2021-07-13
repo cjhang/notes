@@ -4,6 +4,14 @@
 
 Including all the notes related with installation of linux systems and the setups in linux.
 
+Test io speed:
+
+```shell
+dd if=/dev/zero of=test.file bs=64M count=32 oflag=dsync
+```
+
+
+
 
 
 ## Linux Sever
